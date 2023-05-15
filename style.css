@@ -294,7 +294,7 @@ button {
     padding: .625rem 2rem;
     font-size: 1rem;
     font-weight: 500;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     cursor: pointer;
     transition: 0.8s;
 }
