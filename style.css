@@ -557,9 +557,6 @@ header .menu-btn {
     padding-top: 7em;
 }
 
-.pictureofmyself{
-    max-width: 100%;
-}
 
 
 
@@ -689,9 +686,9 @@ header .menu-btn {
 
 
 @media (min-width: 992px) {
-    .pictureofmyself{
+   /* .pictureofmyself{
         max-width: 90%;
-    }
+    } */
 
     .portfolio-image {
         max-width: 60%;
