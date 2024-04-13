@@ -67,7 +67,7 @@
 <footer>
     <div class="container container-nav footer">
         <div class="footer-content" style="align-self: center;padding-bottom: 0.5rem;">
-            <p class="semibold">çağatay atay © 2024</p>
+            <p class="semibold">çağatay atay © 2023</p>
         </div>
         <div class="footer-content">
             <a href = "https://www.linkedin.com/in/cagatay-atay" class="footer-link hover" target="_blank">linkedin</a>
@@ -79,13 +79,14 @@
 <!-- Footer End -->
 
 <script>
-  window.onload = function() {
-    var lowResImage = document.getElementById("low-res-image");
-    var highResImage = document.getElementById("high-res-image");
-    highResImage.src = "/assets/picture-of-me.webp";
-    highResImage.style.display = "block";
-    lowResImage.style.display = "none";
-  };
+    document.addEventListener("DOMContentLoaded", function() {
+        var lowResImage = document.querySelector(".aboutme-intro-img img");
+        var highResImage = new Image();
+        highResImage.src = "/assets/picture-of-me.webp";
+        highResImage.onload = function() {
+            lowResImage.src = highResImage.src;
+        };
+    });
 </script>
 
 </body>
